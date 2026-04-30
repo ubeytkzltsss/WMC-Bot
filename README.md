@@ -1,46 +1,50 @@
-⚡ WMC (Web Minecraft Control) - Network Load Testing Tool
-🛡️ EĞİTİM AMAÇLI KULLANIM BEYANI / EDUCATIONAL USE ONLY
+# 🤖 WMC: Advanced Minecraft Bot Control Panel
 
-ÖNEMLİ: Bu proje, sunucu sahiplerinin kendi altyapılarını optimize etmeleri ve ağ yüklerini test etmeleri için tasarlanmıştır. Kötü niyetli kullanım (DoS/Flood vb.) kesinlikle desteklenmez ve tüm sorumluluk son kullanıcıya aittir.
-📸 ÖNİZLEME / PREVIEW
-🚀 Proje Hakkında / About
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotjs&logoColor=white)
+![Mineflayer](https://img.shields.io/badge/Mineflayer-Ready-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-WMC, modern web teknolojileri ve Mineflayer kütüphanesini bir araya getiren bir Network Stress Test simülatörüdür. Dağıtık sistemlerin Minecraft protokolü üzerindeki davranışlarını analiz etmek ve sunucu dayanıklılığını ölçmek amacıyla geliştirilmiştir.
-✨ Teknik Özellikler / Technical Features
+WMC (Web Minecraft Controller), Minecraft sunucuları için geliştirilmiş, modern ve web tabanlı bir çoklu bot yönetim panelidir[cite: 1]. Bu sistem, tek bir arayüz üzerinden onlarca botu aynı anda yönetmenize olanak tanır[cite: 1].
 
-    Sync Control: Tüm birimlere milisaniyelik hassasiyetle toplu hareket ve etkileşim komutları gönderimi.
+## 🎓 Eğitim Amaçlı Proje (Educational Purpose)
 
-    Real-time Dashboard: WebSocket mimarisi üzerinden anlık bot durum takibi ve canlı sistem logları.
+Bu proje, **Node.js**, **WebSockets (Socket.io)** ve **Mineflayer** kütüphanelerinin entegrasyonunu ve gerçek zamanlı bir kontrol panelinin nasıl inşa edileceğini göstermek amacıyla tamamen **eğitim odaklı** geliştirilmiştir[cite: 1]. Yazılımın amacı, ağ protokollerini ve bot otomasyon mantığını öğretmektir[cite: 1].
 
-    Dual Language Support: Tek tıkla TR/EN arayüz geçişi.
+## ⚡ Neden WMC?
 
-    Advanced Configuration: Gecikme süreleri (ms), bot limitleri ve protokol versiyonları üzerinde tam kontrol.
+Geleneksel konsol tabanlı botların aksine WMC, **Socket.io** altyapısını kullanarak tarayıcı üzerinden gerçek zamanlı kontrol sağlar[cite: 1]. "Zero-Configuration" mantığıyla botlarınızı saniyeler içinde sunucuya dahil edebilirsiniz[cite: 1].
 
-    Safety Kill-Switch: Tek tuşla tüm ağ bağlantılarını güvenli bir şekilde sonlandırma protokolü.
+### 🎮 Öne Çıkan Özellikler
+*   **Dinamik Bot Spawn Sistemi:** Belirlediğiniz isim, sürüm ve sayıdaki botu, ayarlanabilir gecikme (delay) ile bağlayabilirsiniz[cite: 1].
+*   **Gerçek Zamanlı Sistem Günlüğü:** Tüm bağlantı durumlarını ve hataları anlık olarak panel üzerinden takip edebilirsiniz[cite: 1].
+*   **Gelişmiş Hareket Senkronizasyonu:** Tüm botlara aynı anda ileri/geri gitme, zıplama veya vuruş yapma komutu verebilirsiniz[cite: 1].
+*   **Hassas Bakış Kontrolü:** Botların bakış açılarını derece bazlı (yukarı, aşağı, sağ, sol) kontrol edebilirsiniz[cite: 1].
+*   **Akıllı Etkileşim:** Toplu mesaj gönderimi (chat delay destekli) ve envanterdeki eşyaları toplu şekilde yere bırakma (drop) özelliği mevcuttur[cite: 1].
+*   **Çok Dilli Arayüz:** Dahili olarak Türkçe ve İngilizce dil desteği sunar[cite: 1].
 
-🛠️ Kurulum / Installation
-📋 Ön Koşullar
+## 🚀 Kurulum ve Çalıştırma
 
-    Node.js (LTS Sürümü)
+Sistemi çalıştırmak için bilgisayarınızda **Node.js** yüklü olmalıdır[cite: 1].
 
-    NPM (Node Package Manager)
+1.  **Bağımlılıkları Yükleyin:**
+    ```bash
+    npm install express socket.io mineflayer
+    ```
 
-🔧 Çalıştırma Adımları
+2.  **Sistemi Başlatın:**
+    ```bash
+    node server.js
+    ```
 
-    Depoyu klonlayın: git clone https://github.com/ubeytkzlts/WMC-Bot.git
+3.  **Paneli Açın:**
+    Tarayıcınızdan `http://localhost:3000` adresine gidin[cite: 1].
 
-    Proje dizinine girin: cd WMC-Bot
+## 📜 Lisans (License)
 
-    Bağımlılıkları yükleyin: npm install express socket.io mineflayer
+Bu proje **MIT Lisansı** altında lisanslanmıştır. Bu, yazılımı özgürce kullanabileceğiniz, kopyalayabileceğiniz ve değiştirebileceğiniz anlamına gelir. Daha fazla detay için projedeki lisans dosyasına göz atabilirsiniz.
 
-    Paneli başlatın: node server.js
+## ⚠️ Önemli Uyarı
+Bu yazılım tamamen **eğitim ve test amaçlı** geliştirilmiştir[cite: 1]. Kullanıcıların, bu aracı kullandıkları sunucuların kurallarına uyması kendi sorumluluğundadır[cite: 1]. Sunucu kurallarını ihlal eden eylemlerden geliştirici sorumlu tutulamaz[cite: 1].
 
-Kurulum tamamlandıktan sonra tarayıcınızdan http://localhost:3000 adresine giderek panel arayüzüne erişebilirsiniz.
-⚖️ Yasal Uyarı / Legal Disclaimer
-
-[TR] Bu yazılımın yetkiniz olmayan sistemlerde kullanılması yerel yasalarca suç teşkil edebilir. Yazılımın kullanımından doğacak her türlü hukuki sorumluluk kullanıcıya aittir. Geliştirici hiçbir mesuliyet kabul etmez.
-
-[EN] Using this software on unauthorized systems may lead to legal consequences. All legal responsibility remains with the user. The developer assumes no liability for misuse.
-👤 Geliştirici / Developer
-
-    Ubeytkzlts - https://github.com/ubeytkzlts
+Developed by **ubeytkzlts**
