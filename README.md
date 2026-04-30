@@ -27,18 +27,25 @@ Geleneksel konsol tabanlı botların aksine WMC, **Socket.io** altyapısını ku
 
 Sistemi çalıştırmak için bilgisayarınızda **Node.js** yüklü olmalıdır.
 
-1.  **Bağımlılıkları Yükleyin:**
+1.  **Projeyi Klonlayın:**
+    ```bash
+    git clone https://github.com/ubeytkzltsss/WMC-Bot.git
+    ```
+2.  **Proje Klasörüne Girin:**
+    ```bash
+    cd WMC-Panel
+    ```
+3.  **Gerekli Kütüphaneleri Yükleyin:**
     ```bash
     npm install express socket.io mineflayer
     ```
-
-2.  **Sistemi Başlatın:**
+    *(Not: Eğer `package.json` dosyanız yoksa önce `npm init -y` komutunu çalıştırın.)*
+4.  **Paneli Başlatın:**
     ```bash
     node server.js
     ```
-
-3.  **Paneli Açın:**
-    Tarayıcınızdan `http://localhost:3000` adresine gidin.
+5.  **Arayüze Erişin:**
+    Tarayıcınızı açın ve `http://localhost:3000` adresine giderek yönetim paneline bağlanın.
 
 ## 📜 Lisans (License)
 
