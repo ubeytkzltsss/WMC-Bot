@@ -41,16 +41,16 @@ WMC, web tabanlı bir arayüz üzerinden birden fazla Mineflayer botunu senkroni
 ### 🔧 Adımlar
 ```bash
 # Projeyi yerel makinenize çekin
-git clone [https://github.com/ubeytkzlts/wmc-panel.git](https://github.com/ubeytkzlts/wmc-panel.git)
+git clone https://github.com/ubeytkzltsss/WMC-Bot.git
 
 # Proje klasörüne girin
-cd wmc-panel
+cd WMC-Bot
 
 # Gerekli bağımlılıkları yükleyin
 npm install express socket.io mineflayer
 
 # Uygulamayı ayağa kaldırın
-node server.js
+node server.js```
 
 Tarayıcınızda http://localhost:3000 adresini açarak panel üzerinden kendi yerel sunucunuzda testlere başlayabilirsiniz.
 ⚖️ Yasal Uyarı / Legal Disclaimer
@@ -60,4 +60,4 @@ Tarayıcınızda http://localhost:3000 adresini açarak panel üzerinden kendi y
 [EN] Using this software on unauthorized servers may lead to legal issues. The user assumes all legal responsibility arising from the use of the software. The developer accepts no liability[cite: 5].
 👤 Geliştirici / Developer
 
-    Ubeyt Kzlts - GitHub Profilim
+    Ubeytkzlts
