@@ -33,7 +33,7 @@ Sistemi çalıştırmak için bilgisayarınızda **Node.js** yüklü olmalıdır
     ```
 2.  **Proje Klasörüne Girin:**
     ```bash
-    cd WMC-Panel
+    cd WMC-Bot
     ```
 3.  **Gerekli Kütüphaneleri Yükleyin:**
     ```bash
